@@ -1,0 +1,41 @@
+.ctx {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    .span_line {
+      animation: opacity_span_line 0.5s linear infinite;
+    }
+  }
+}
+.container_index {
+  width: 100%;
+  height: 100%;
+}
+@keyframes opacity_span_line {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
